@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Player Name &#8721; _______________________ </title>
+  <link rel="icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+body {
+  background-image: url("Backgrounds/Black.jpg");
+}
+input[type=text], select, textarea {
+  color:#ccc;
+  background-image: url('Backgrounds/Black.jpg');
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.redText{ background-Color:#000; }
+input[type=Submit] {
+  background: rgb(0, 0, 0,0);
+  opacity: 0.6;
+  color:#ccc;
+  background-image: url('Backgrounds/Black.jpg');
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.container {
+  background-image: url("Backgrounds/Black.jpg");
+  color: #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+
+</style>
+</head>
+<body>
+
+  <h3 style="color:#ccc;Text-align:Center">Player Name</h3>
+
+<div class="container">
+  <form action="http://127.0.0.1:8887/Game.html">
+    <label for="first-name">First Name ...</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="last-name">Last Name ...</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country ...</label>
+    <select id="country" name="country">
+      <option class="redText" value="Australia">Australian</option>
+      <option class="redText" value="India">Indian</option>
+      <option class="redText" value="America">American</option>
+      <option class="redText" value="China">Chinese</option>
+      <option class="redText" value="Canadian">Canadian</option>
+      <option class="redText" value="Jamica">Jamican</option>
+      <option class="redText" value="Afghanistan">Afghanistan</option>
+      <option class="redText" value="Japan">Japanese</option>
+      <option class="redText" value="Austria">Austria</option>
+      <option class="redText" value="Bahamas">Bahamas</option>
+      <option class="redText" value="Bangladesh">Bangladesh</option>
+      <option class="redText" value="Sweden">Sweden</option>
+        </select>
+        <figure>
+          
+        </figure>
+    <label for="Review">Reviews ...</label>
+    <textarea id="Review" name="Review" placeholder="Write something ...." style="height:200px"></textarea>
+    
+    <input type="submit" onclick="alert('Welcome to My Game , Press space to move Up . Do not touch the Obstacles , they will end the Game . After losing the game , click on the reset button to play again . Made By Divit Kundan ______________________')" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
